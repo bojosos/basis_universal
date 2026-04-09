@@ -95,6 +95,11 @@ project "basis_universal"
 	filter "system:linux"
 		pic "On"
 		systemversion "latest"
+		if _OPTIONS["simd"] == "avx2" then
+			buildoptions { "-mavx2", "-msse4.1", "-mssse3" }
+		else
+			buildoptions { "-msse4.1", "-mssse3" }
+		end
 
 	filter "configurations:Debug"
 		runtime "Debug"
