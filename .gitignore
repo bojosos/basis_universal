@@ -9,3 +9,32 @@ x64/
 
 # Mac finder
 .DS_Store
+
+**/bin/
+!3rdparty
+bin-int/
+
+.vs/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+**.csproj
+**.csproj.filters
+**.csproj.user
+**/Makefile
+
+.vscode/c_cpp_properties.json
+
+.vscode/
+examples/
+PVS-Studio.log
+
+report.html
+
+report.tasks
+
+strace_out
+
+*.log
+bin/imgui.ini
